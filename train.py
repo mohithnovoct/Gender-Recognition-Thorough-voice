@@ -12,7 +12,7 @@ def get_device():
 def train_model():
     data_dir = "data"
     batch_size = 32
-    num_epochs = 1
+    num_epochs = 30
     learning_rate = 0.001
     
     device = get_device()
