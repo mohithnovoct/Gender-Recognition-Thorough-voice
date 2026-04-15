@@ -30,7 +30,7 @@ source venv/bin/activate
 
 2. Install the necessary dependencies:
 ```bash
-pip install torch torchaudio numpy librosa soundfile gradio imageio-ffmpeg
+pip install -r requirements.txt
 ```
 
 3. Ensure that your dataset is placed structurally. You should have `.wav` files inside the `data/male` and `data/female` directories. 
