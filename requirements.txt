@@ -1,0 +1,7 @@
+torch
+torchaudio
+librosa
+soundfile
+gradio
+numpy
+imageio-ffmpeg
