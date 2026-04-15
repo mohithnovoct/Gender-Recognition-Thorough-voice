@@ -105,7 +105,7 @@ def predict_gender(audio_path):
         female_prob = probabilities[0][1].item()
 
     confidence = max(male_prob, female_prob)
-    warning = "\Low confidence — try speaking longer or louder." if confidence < 0.65 else ""
+    warning = "\nLow confidence — try speaking longer or louder." if confidence < 0.65 else ""
 
     if male_prob > female_prob:
         result = f"Male\nConfidence: {male_prob:.1%}{warning}"

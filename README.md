@@ -64,3 +64,17 @@ Once the model is successfully trained, launch the interactive user interface!
 python app.py
 ```
 This deploys a local web server (usually at `http://localhost:7860`). Open that URL in any modern web browser to access the Microphone capability, and start testing!
+
+### 3. Running with Docker 🐳
+For complete portability, you can package the entire application (along with the trained `model.pth`) into a standalone Docker container. By using the container, anyone can run your pipeline seamlessly regardless of their OS or Python installations!
+
+**To Build the Image:**
+```bash
+docker build -t voice-gender-recognition .
+```
+
+**To Run the Container:**
+```bash
+docker run -p 7860:7860 voice-gender-recognition
+```
+> This binds the container to your system's port 7860. The application will be immediately available at `http://localhost:7860` in your browser.
